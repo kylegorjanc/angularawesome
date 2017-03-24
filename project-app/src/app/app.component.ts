@@ -9,7 +9,7 @@ import { ProjectDataService } from './project-data.service';
   providers: [ProjectDataService]
 })
 export class AppComponent {
-  title ='app works!';
+  title ='Projects';
   newProject: Project = new Project();
 
   // Ask Angular DI system to inject the dependency
