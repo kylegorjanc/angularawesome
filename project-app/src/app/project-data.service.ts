@@ -51,6 +51,43 @@ getProjectById(id: number): Project {
   .pop();
 }
 
+
+
+
+// var projectArr = [
+
+ a var saltyRunning = new Project({
+        title: 'Salty Running',
+        category: 'design',
+        link: 'https://www.saltyrunning.com',
+        thumbnail_url: 'http://placekitten.com/g/100/100',
+        blurb: 'A collaborative blog and online community of women runners',
+        content: '<p style="color:orange;">here is some html in the color orange!!!</p>',
+    }),
+
+  var saltyRunning2 = new Project({
+        title: 'Salty Running',
+        category: 'design',
+        link: 'https://www.saltyrunning.com',
+        thumbnail_url: 'http://placekitten.com/g/100/100',
+        blurb: 'A collaborative blog and online community of women runners',
+        content: '<p style="color:orange;">here is some html in the color orange!!!</p>',
+    }),
+
+  var saltyRunning3 = new Project({
+        title: 'Salty Running',
+        category: 'design',
+        link: 'https://www.saltyrunning.com',
+        thumbnail_url: 'http://placekitten.com/g/100/100',
+        blurb: 'A collaborative blog and online community of women runners',
+        content: '<p style="color:orange;">here is some html in the color orange!!!</p>',
+    }),
+
+
+
+
+// ];
+
 }
 
 
