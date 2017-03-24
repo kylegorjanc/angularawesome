@@ -32,9 +32,9 @@ export class AppComponent {
   }
 
   // Service is now available as this.projectDataService
-  toggleProjectComplete(project) {
-    this.projectDataService.toggleProjectComplete(project);
-  }
+  // toggleProjectComplete(project) {
+  //   this.projectDataService.toggleProjectComplete(project);
+  // }
 
 
 }

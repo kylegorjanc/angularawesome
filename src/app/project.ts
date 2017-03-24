@@ -1,4 +1,5 @@
 export class Project {
+  id: number;
   title: { type: String, required: true, unique: true };
   category: { type: String, default: 'design', required: true };
   link: { type: String, required: true };
@@ -8,8 +9,7 @@ export class Project {
 
 
     constructor(values: Object = {}) {
-    Object.assign(this, values);
+    (<any>Object).assign(this, values);
   }
 }
 
-})
