@@ -1,1 +1,323 @@
-/* You can add global styles to this file, and also import other style files */
+/* COLOR GUIDE 
+----FFA800
+#FF9D00 - Orange
+#18E2D5 - Teal
+#40D8FF - Blue
+
+Alerts
+#780617 - Red
+#C4BC13 - Yellow
+#787418 - Green
+
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    width:100%;
+    max-width:1024px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, header-nav a {
+  color: #333333;
+  display: block;
+}
+
+a.nounderline {
+  text-decoration: none;
+}
+
+a:active {
+  color: #e1e1e1;
+}
+
+p {
+  max-width: 100%;
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  display: block;
+}
+
+ul, ol {
+  margin: 0;
+  display: block;
+}
+
+
+ul.nobullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.inline {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;;
+}
+ul.inline li {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+@media (min-width: 1044px) {
+  ul.inline li {
+    margin: 0;
+  }
+}
+
+/* ********** HEADER ********** */
+
+.main-header {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-header {
+  /*background-color: #FF9E01;*/
+  height:80px;
+  border-bottom: 1px solid #FF9E01;
+}
+
+.main-header .logo {
+  background: url(./assets/img/logo.png) top left no-repeat; 
+  width: 193px;
+  height: 80px;
+}
+
+/*.main-header .logo {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  width: 90px;
+  flex: 0 2 90px;
+  overflow: visible;
+}
+
+
+.main-header .logo img {
+  max-width: 120px;
+  height: auto;
+}*/
+
+/*.main-header .balloon {
+  float:center;
+  width: 40px;
+  height: auto;
+  flex: 0 1 auto;
+}*/
+
+/*.main-header .main-nav {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex: 0 2 90px;
+}*/
+
+.header-nav {
+  position: relative;
+  padding: 10px 0;
+}
+
+.header-nav li {
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.header-nav:last-child {
+  margin-bottom: 0;
+}
+
+.nav-list li a {
+  color: #333333;
+  font-weight: bolder;
+}
+
+.nav-list li a:hover, .nav-list li a:focus {
+  color: #FF9E01;
+}
+
+/* ********** FOOTER ********** */
+
+.main-footer {
+    background-color: #333333;
+    color: #fafafa;
+    width: 100%;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-nav {
+
+  width:60%;
+  margin: 0 auto;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.footer-nav li {
+  margin: 5px 10px;
+  min-width: 60px;
+}
+.footer-nav li a {
+  color: #e1e1e1;
+  margin: 0 auto;
+}
+
+.footer-nav i {
+  font-size: 2em;
+}
+
+.footer-nav span {
+  display: block;
+  width:100%;
+}
+
+.copyright {
+  display: block;
+  font-size: xx-small;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ********** MAIN ********** */
+
+main {
+  padding: 60px 16px 40px;
+}
+
+.hero {
+  background-color: #18E2D5;
+  background: url('./assets/img/bluekyle.jpg') bottom right / auto 100% no-repeat;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #18E2D5;
+  width: 100%;
+  min-height: 300px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background: url('#');
+    background-color: #18E2D5;
+  }
+}
+
+.hero .words {
+  background-color: rgba(24, 226, 213, 0.8);
+    width: 40%;
+    min-width: 310px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero .img {
+  
+  flex: none | [ <'flex-2'> <'flex-2'>? || auto ];
+  height: 00px;
+  width: 400px;
+  margin-right: 0px;
+}
+
+/* ********** Projects Page ********** */
+
+.projects {
+  margin-top: 60px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  max-width: 310px;
+  text-align: center;
+}
+
+.proj-thumb {
+  height: 184px;
+  width: 310px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  border-radius: 2px;
+  opacity: 0.8;
+}
+
+.proj-thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.project a, .project h4 {
+  text-decoration: none;
+  color: #222222;
+}
+
+.project:hover .proj-thumb {
+  opacity: 1;
+}
+
+.project:hover a, .project:hover h4 {
+  text-decoration: none;
+  color: #FF9E01;
+}
+
+@media (max-width: 700px) {
+  .proj-thumb {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* ********** Resume Page ********** */
+
+.resume-pdf-link {
+  float: right;
+}

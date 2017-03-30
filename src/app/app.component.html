@@ -1,39 +1,8 @@
-<!-- public/views/index.html -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kyle Gorjanc</title>
-  <script src="https://use.fontawesome.com/a8a81516ce.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body> -->
-<section class="projectapp">
-  <header class="main-header">
-    <div class="logo-wrap"><a href="./index.html"><div class="logo"></div></a></div>
-    <div class="main-nav">
-    <ul class="nobullet inline nav-list header-nav">
-      <li><a class="nounderline" href="./contact.html">Contact</a></li>
-      <li><a class="nounderline" href="#projects">Work</a></li>
-      <li><a class="nounderline" href="./kylegorjancresume.pdf">Resume</a></li>
-    </ul>
-      
-    </div>
-  </header>
+
   <main>
- <!--    <div class="hero">
-      <div class="words">
-        <h1>Well hi there!</h1>
-          <p>I came to design from the world of filmmaking, bringing with me a coffee addiction and a passion for efficient, collaborative, project-based work. Over the last few years I fell in love with design while working on Salty Running, a website I co-founded with my sister, and now I'm looking to join an awesome team I can learn and grow with as I take on my new career!</p>
-      </div>
-      <div class="img"></div>
-      
-    </div>
 
 
-
+<!--
     <div class="projects" id="projects">
       <div class="project"><a href="./salty-running.pdf">
         <div class="proj-thumb"><img src="./assets/img/sr-thumbnail.png" alt=""></div>
@@ -57,48 +26,20 @@
       <div id="tasty-trucks"></div>
       <div id="salty-shop"></div>
     </div> -->
-    <section class="main" *ngIf="projects.length > 0">
+    <main>
       <h2>Projects</h2>
-      <ul class="project-list flex">
-        <li *ngFor="let project of projects">
-            <div class="view">
-              <a href="/projects/{{ project.id }}">
-                <div class="proj-thumb">
-                  <img src="{{ project.thumbnail_url }}" alt="">
-                </div>
-                <h4 class="proj-title">{{ project.title }}</h4>
-                <p class="proj-blurb">{{ project.blurb }}
-                </p>
-              </a>
-            </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer class="main-footer">
-    <ul class="nobullet inline nav-list footer-nav">
-      <li>
-        <a class="nounderline" href="https://www.linkedin.com/in/kylegorjanc"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="screen-reader-text">Linkedin</span></a>
-      </li>
-      <li>
-        <a class="nounderline" href="https://github.com/kylegorjanc"><i class="fa fa-github-square" aria-hidden="true"></i><span class="screen-reader-text">GitHub</span></a>
-      </li>
-      <li>
-        <a class="nounderline" href="https://www.behance.net/kylegorjanc"><i class="fa fa-behance-square" aria-hidden="true"></i><span class="screen-reader-text">Behance</span></a>
-      </li>
-      <li>
-        <a class="nounderline" href="mailto:kylegorjanc@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i><span class="screen-reader-text">Email</span></a>
+    <ul class="projects nobullet inline" id="projects">
+      <li *ngFor="let project of projects" (click)="onSelect(project)">
+        <div class="project">
+          <div class="proj-thumb"><img src="{{ project.thumbnail_url }}" alt=""></div>
+          <h4 class="proj-title">{{project.title}}</h4>
+          <p class="proj-blurb">{{project.blurb}}</p>
+        </div>
       </li>
     </ul>
-      
-
-    <span class="copyright">©2017 Kyle Gorjanc</span>
-  </footer>
-
-<!--     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="./js/app.js"></script> -->
-
-</section>
- <!--  </body>
-</html> -->
+    <div class="section">
+      <h2> {{selectedProject.title}} </h2>
+      <div></div>
+    </div>
+  </main>
+ 
