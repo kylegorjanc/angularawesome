@@ -1,34 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { Project } from './project';
-
-const PROJECTS: Project[] = [
-  { id: 11,
-    title: 'Salty Running',
-    category: 'design',
-    link: '',
-    thumbnail_url: '../assets/img/sr-thumbnail.png',
-    blurb: 'A collaborative blog and online community of women runners',
-    content: '../assets/pdf/salty-running.pdf'
-  },
-  { id: 12,
-    title: 'Tasty Trucks',
-    category: 'design',
-    link: '',
-    thumbnail_url: '../assets/img/tt-thumbnail.png',
-    blurb: 'A mobile app where users can find local food trucks, view the truck’s menu and place an order to be picked up.',
-    content: '../assets/pdf/tasty-trucks.pdf'
-  },
-  { id: 13,
-    title: 'Salty Shop',
-    category: 'design',
-    link: '',
-    thumbnail_url: '../assets/img/ss-thumbnail.png',
-    blurb: 'An e-commerce platform for Salty Running that sells a curated selection of running related products',
-    content: '../assets/pdf/salty-shop.pdf'
-  }
-];
-
-
+import { ProjectService } from './project.service';
 
 @Component({
   selector: 'app-root',
@@ -46,13 +19,23 @@ const PROJECTS: Project[] = [
           </li>
         </ul>
         <project-detail [project]="selectedProject"></project-detail>
-    `
+    `,
+    providers: [ProjectService],
 })
 
 export class AppComponent {
   catTitle: 'Projects';
-  projects = PROJECTS;
+  projects: Project[];
   selectedProject: Project;
+  constructor(private projectService : ProjectService) { }
+
+  getProjects(): void {
+    this.projectService.getProjects().then(projects => this.projects = projects);
+  }
+
+  ngOnInit(): void {
+    this.getProjects();
+  }
   onSelect(project: Project): void {
     this.selectedProject = project;
   }
