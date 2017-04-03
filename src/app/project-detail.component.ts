@@ -7,9 +7,13 @@ import { Project } from './project';
         <div *ngIf="project">
           <div class="project-header flex"> 
             <h3 class="project-header-title">{{ project.title }}</h3> 
-            <span class="project-pdf-link"><a href="{{ project.content }}" >View PDF</a></span></div>
-          
+            <span class="project-pdf-link"><a href="{{ project.pdf }}" >View PDF</a></span>
+          </div>
+          <div class="project-main">
+            {{ project.hml }}
+          </div>
         </div>
+        
         `
 })
 
