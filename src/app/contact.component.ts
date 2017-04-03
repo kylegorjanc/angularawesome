@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component }    from '@angular/core';
+import { FormControl }  from '@angular/forms';
 
 
 export class Contact {
@@ -16,13 +16,8 @@ export class Contact {
   template: `
    <div class="contact">
      <h3>Contact Kyle</h3>
-     <form action="MAILTO:kylegorjanc@gmail.com" method="GET" enctype="text/plain">
-     <label for="body">Send me a nice message</label>
-     <input type="textarea" placeholder="type something...">
-     <input type="submit" value="Send">
-     <input type="reset" value="Cancel">
-     </form>
-
+       <iframe height="580" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://kylegorjanc.wufoo.com/embed/zlt5q8l1hmtylh/">
+       </iframe>
     </div>
   `
 })
