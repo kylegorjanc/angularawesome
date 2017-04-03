@@ -5,8 +5,10 @@ import { Project } from './project';
   selector: 'project-detail',
   template: `
         <div *ngIf="project">
-          <h2> {{ project.title }} </h2>
-          <div><a href="{{ project.content }}" >GO HERE</a></div>
+          <div class="project-header flex"> 
+            <h3 class="project-header-title">{{ project.title }}</h3> 
+            <span class="project-pdf-link"><a href="{{ project.content }}" >View PDF</a></span></div>
+          
         </div>
         `
 })

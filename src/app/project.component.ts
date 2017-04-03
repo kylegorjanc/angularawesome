@@ -9,8 +9,8 @@ import { ProjectService } from './project.service';
   styleUrls: ['./app.component.css'],
   template: `
         <ul class="projects nobullet inline" id="projects">
-          <li *ngFor="let project of projects" (click)="onSelect(project)">
-            <div class="project">
+          <li class="project" *ngFor="let project of projects" (click)="onSelect(project)">
+            <div class="">
               <div class="proj-thumb"><img src="{{ project.thumbnail_url }}" alt=""></div>
               <h4 class="proj-title">{{project.title}}</h4>
               <p class="proj-blurb">{{project.blurb}}</p>
