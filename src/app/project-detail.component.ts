@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Project } from './project';
+import { ProjectHtmlComponent } from './project-html.component'
 
 @Component({
   selector: 'project-detail',
@@ -10,7 +11,7 @@ import { Project } from './project';
             <span class="project-pdf-link"><a href="{{ project.pdf }}" >View PDF</a></span>
           </div>
           <div class="project-main">
-            {{ project.hml }}
+            <div [innerHTML]="project.html"></div>
           </div>
         </div>
         

@@ -7,6 +7,6 @@ export class Project {
   thumbnail_url: string;
   blurb: string;
   pdf: string;
-  html: string;
+  html: string
 }
 
