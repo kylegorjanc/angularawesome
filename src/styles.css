@@ -227,7 +227,7 @@ ul.inline li {
     background-color: #333333;
     color: #fafafa;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 6.25em;
     padding-bottom: 40px;
 }
 
@@ -384,6 +384,7 @@ main .projects {
   text-align: left;
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
+  margin-top: 3.75em;
 }
 
 .project-header * {
@@ -402,6 +403,63 @@ main .projects {
 }
 
 /* ********** END Project Detail View ********** */
+
+/* ********** Project Html ********** */
+
+.flex-tight {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.flex-tight flex-item-1 {
+  flex: none | [ <'1'> <'1'>? || <'33%'> ];
+}
+
+.flex-tight flex-item-2 {
+  flex-shrink: 2;
+  flex: none | [ <'2'> <'2'>? || <'66%'> ];
+}
+
+
+.cs-text {
+  min-width: 310px;
+  padding: 16px;
+}
+
+.bggrey {
+  background-color: #444444;
+  color: #FAFAFA;
+}
+
+.bggrey h4 {
+  background-color: #444444;
+  color: #FAFAFA;
+}
+
+.bgblue {
+  background-color: #18E2D5;
+}
+
+.project-content {
+  margin-top: 1.875em;
+}
+
+.section {
+      margin: 3.75em auto 0;
+}
+
+.skinnysection {
+      max-width: 680px;
+}
+
+
+/* ********** END Project Html ********** */
 
 /* ********** Resume Page ********** */
 
