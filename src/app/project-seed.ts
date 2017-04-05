@@ -9,9 +9,8 @@ export const PROJECTS: Project[] = [
     blurb: 'A collaborative blog and online community of women runners',
     pdf: '../assets/pdf/salty-running.pdf',
     html: `<div class="project-content">
-  <div class="section columns2 intro">
-    <p><a href="https://www.saltyrunning.com">Salty Running</a> is a collaborative blog for women runners that uses WordPress for its day-to-day content management. I built and styled the original site in 2012 (having no working knowledge of code) by using a theme with a WYSIWYG style editor. At the end of 2015 we decided to make a push for profitability. By this time I had learned enough HTML/CSS to get by, and decided I wanted to learn how to seriously build a new site. </p>
-    <p>I enrolled in a dev bootcamp and started learning development. Through that experience I learned how much I didn’t know about design, but the more I tried, the more I loved it. With the help of a branding firm we developed a color palette that felt bold, fast and strong. We updated our logo from a cute little cartoon snail to a cleaner, sleeker version. Then it was time for me to get to work on the details. Here’s what I did with the home page.</p>
+  <div class="section intro">
+    <p class="columns2"><a href="https://www.saltyrunning.com">Salty Running</a> is a collaborative blog for women runners that uses WordPress for its day-to-day content management. I built and styled the original site in 2012 (having no working knowledge of code) by using a theme with a WYSIWYG style editor. At the end of 2015 we decided to make a push for profitability. By this time I had learned enough HTML/CSS to get by, and decided I wanted to learn how to seriously build a new site. <br/><br/>I enrolled in a dev bootcamp and started learning development. Through that experience I learned how much I didn’t know about design, but the more I tried, the more I loved it. With the help of a branding firm we developed a color palette that felt bold, fast and strong. We updated our logo from a cute little cartoon snail to a cleaner, sleeker version. Then it was time for me to get to work on the details. Here’s what I did with the home page.</p>
   </div>
 
   <div class="section flex-tight bggrey" id="section-1">
@@ -49,9 +48,8 @@ export const PROJECTS: Project[] = [
     blurb: 'A mobile app where users can find local food trucks, view the truck’s menu and place an order to be picked up.',
     pdf: '../assets/pdf/tasty-trucks.pdf',
     html: `<div class="project-content">
-    <div class="section columns2 intro">
-  <p>Tasty Trucks is a mobile app where users can search a map for nearby food trucks, view the trucks’ menus, place and pay for an order, and review their experience.</p>
-  <p>This was my first time creating a brand identity, and the directive was to create something fun and friendly that would make people want to order lunch.</p>
+    <div class="section intro">
+  <p class="columns2">Tasty Trucks is a mobile app where users can search a map for nearby food trucks, view the trucks’ menus, place and pay for an order, and review their experience.<br/><br>This was my first time creating a brand identity, and the directive was to create something fun and friendly that would make people want to order lunch.</p>
 </div>
 
 <div class="section flex-tight bgblue" id="section-1">
@@ -137,8 +135,8 @@ export const PROJECTS: Project[] = [
     blurb: 'An e-commerce platform for Salty Running that sells a curated selection of running related products',
     pdf: '../assets/pdf/salty-shop.pdf',
     html: `<div class="project-content">
-  <div class="section columns2 intro">
-    <p>The Salty Shop is an online boutique I created on spec for Salty Running to try my hand at designing an e-commerce platform. Stay tuned for more info about my design process!</p>
+  <div class="section intro">
+    <p class="columns2">The Salty Shop is an online boutique I created on spec for Salty Running to try my hand at designing an e-commerce platform. Stay tuned for more info about my design process!</p>
   </div>
 </div>`
   }
