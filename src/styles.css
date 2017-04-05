@@ -412,18 +412,22 @@ main .projects {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
-.flex-tight flex-item-1 {
-  flex: none | [ <'1'> <'1'>? || <'33%'> ];
+.flex-tight .flex-item-1 {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 33%;
 }
 
-.flex-tight flex-item-2 {
+.flex-tight .flex-item-2 {
+  flex-grow: 2;
   flex-shrink: 2;
-  flex: none | [ <'2'> <'2'>? || <'66%'> ];
+  flex-basis: 66%;
+  max-width: 100%;
 }
 
 
