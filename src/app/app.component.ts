@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
          <div class="logo-wrap"><a class="nounderline" routerLink="/"><div class="logo"></div></a></div>
          <div class="main-nav">
          <ul class="nobullet inline nav-list header-nav">
-           <li><a class="nounderline" routerLink="/contact">Contact</a></li>
            <li><a class="nounderline" routerLink="/projects">Portfolio</a></li>
            <li><a class="nounderline" routerLink="/resume">Resume</a></li>
+           <li><a class="nounderline" routerLink="/contact">Contact</a></li>
          </ul>
            
          </div>
