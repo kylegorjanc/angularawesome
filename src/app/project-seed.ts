@@ -48,7 +48,8 @@ export const PROJECTS: Project[] = [
     thumbnail_url: '../assets/img/tt-thumbnail.png',
     blurb: 'A mobile app where users can find local food trucks, view the truck’s menu and place an order to be picked up.',
     pdf: '../assets/pdf/tasty-trucks.pdf',
-    html: `<div class="columns-2 intro">
+    html: `<div class="project-content">
+    <div class="section columns2 intro">
   <p>Tasty Trucks is a mobile app where users can search a map for nearby food trucks, view the trucks’ menus, place and pay for an order, and review their experience.</p>
   <p>This was my first time creating a brand identity, and the directive was to create something fun and friendly that would make people want to order lunch.</p>
 </div>
@@ -124,6 +125,7 @@ export const PROJECTS: Project[] = [
 <div class="section flex-tight" id="section-10">
   <div class="flex-item-1 cs-image"><img src="../assets/12/tt-iterate.png" alt="Iterating over Check Out screen">
   </div>
+</div>
 </div>`
   },
 
